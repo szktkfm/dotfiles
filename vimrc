@@ -81,3 +81,6 @@ set hlsearch
 " Visual Block
 nnoremap <Space>v <C-v> 
 
+" alias
+:command Vsp vsplit
+:command Sp split
