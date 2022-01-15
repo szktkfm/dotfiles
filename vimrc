@@ -34,9 +34,9 @@ colorscheme elflord
 " 行番号を表示
 set number
 " 現在の行を強調表示
-" set cursorline
+set cursorline
 " 現在の行を強調表示（縦）
-" set cursorcolumn
+set cursorcolumn
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント
@@ -84,3 +84,37 @@ nnoremap <Space>v <C-v>
 " alias
 :command Vsp vsplit
 :command Sp split
+
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+='<your home dir>/.cache/dein/repos/github.com/Shougo/dein.vim'
+
+" Required:
+call dein#begin('<your home dir>/.cache/dein')
+
+" Let dein manage dein
+" Required:
+call dein#add('<your home dir>/.cache/dein/repos/github.com/Shougo/dein.vim')
+
+" Add or remove your plugins here like this:
+call dein#add('cohama/lexima.vim')
+"call dein#add('Shougo/neosnippet.vim')
+"call dein#add('Shougo/neosnippet-snippets')
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
+
+"End dein Scripts-------------------------
