@@ -1,2 +1,2 @@
-# dotファイル
-bash追加したい
+# dot files
+
