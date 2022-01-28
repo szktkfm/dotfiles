@@ -1,4 +1,3 @@
-
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -16,9 +15,18 @@ call dein#add('<home_dir>/.cache/dein/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here like this:
 call dein#add('cohama/lexima.vim')
+call dein#add('junegunn/fzf.vim')
+
+" colorscheme
 call dein#add('jacoborus/tender.vim')
-"call dein#add('Shougo/neosnippet.vim')
-"call dein#add('Shougo/neosnippet-snippets')
+call dein#add('tomasiser/vim-code-dark')
+
+" preview replacement
+call dein#add('markonm/traces.vim')
+
+" status line
+call dein#add('itchyny/lightline.vim')
+
 
 " Required:
 call dein#end()
@@ -67,7 +75,7 @@ set showcmd
 
 
 " 見た目系
-colorscheme tender
+colorscheme codedark
 " 行番号を表示
 set number
 " 現在の行を強調表示
